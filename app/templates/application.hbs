@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="w-section hero-section blog-hero">
+  <div class="hero-overlay"></div>
+  {{header-nav}}
+</div>
 
 {{outlet}}
+
+<div class="w-section cta-section">
+  <div class="w-container">
+    <div class="cta-heading">Come Play With Us!</div>
+    {{link-to 'Get Involved' 'contact' class='w-button button'}}
+  </div>
+</div>
+
+{{footer-nav}}
