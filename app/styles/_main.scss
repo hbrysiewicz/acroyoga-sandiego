@@ -308,13 +308,13 @@ blockquote {
 .social-block.instagram:hover {
   background-color: #3d90cf; }
 
-.social-block.pinterest {
+.social-block.slack {
   background-color: #c92228;
-  background-image: url('/images/pinterest.svg');
+  background-image: url('/images/slack.png');
   background-size: 50px;
 }
 
-.social-block.pinterest:hover {
+.social-block.slack:hover {
   background-color: #aa1217;
 }
 
@@ -847,7 +847,7 @@ html.w-mod-js *[data-ix="hero-text"] {
   .social-block.facebook {
     background-size: 40px;
   }
-  .social-block.pinterest {
+  .social-block.slack {
     background-size: 40px;
   }
   .social-block.google-calendar {
