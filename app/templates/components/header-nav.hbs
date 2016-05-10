@@ -4,15 +4,31 @@
       <div class="logo-text">AcroYoga<strong data-new-link="true">SanDiego</strong>
       </div>
     {{/link-to}}
-    <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
-      {{link-to 'Home' 'index' classNames="w-nav-link nav-link"}}
-      {{link-to 'About' 'about' classNames='w-nav-link nav-link'}}
-      {{link-to 'Events' 'events' classNames='w-nav-link nav-link'}}
-      {{link-to 'Blog' 'blog' classNames='w-nav-link nav-link'}}
-      {{link-to 'Contact' 'contact' classNames='w-nav-link nav-link'}}
-    </nav>
-    <div class="w-nav-button menu-button">
+
+    {{#if showLarge}}
+      <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu">
+        {{link-to 'Home' 'index' classNames="w-nav-link nav-link"}}
+        {{link-to 'About' 'about' classNames='w-nav-link nav-link'}}
+        {{link-to 'Events' 'events' classNames='w-nav-link nav-link'}}
+        {{link-to 'Blog' 'blog' classNames='w-nav-link nav-link'}}
+        {{link-to 'Contact' 'contact' classNames='w-nav-link nav-link'}}
+      </nav>
+    {{/if}}
+
+    <div class="w-nav-button menu-button {{if isShowing 'w--open'}}" {{action 'toggle'}}>
       <div class="w-icon-nav-menu"></div>
     </div>
+
+    {{#if showMini}}
+      <div class="w-nav-overlay" data-wf-ignore="" style="height: 1963px; display: block;">
+        <nav role="navigation" class="w-nav-menu w-preserve-3d nav-menu {{if isShowing 'w--nav-menu-open'}}" {{action 'toggle'}}>
+          {{link-to 'Home' 'index' classNames="w-nav-link nav-link w--nav-link-open"}}
+          {{link-to 'About' 'about' classNames='w-nav-link nav-link w--nav-link-open'}}
+          {{link-to 'Events' 'events' classNames='w-nav-link nav-link w--nav-link-open'}}
+          {{link-to 'Blog' 'blog' classNames='w-nav-link nav-link w--nav-link-open'}}
+          {{link-to 'Contact' 'contact' classNames='w-nav-link nav-link w--nav-link-open'}}
+        </nav>
+      </div>
+    {{/if}}
   </div>
 </div>
