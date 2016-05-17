@@ -21,7 +21,6 @@ function get(typeKey, db, req) {
       attributes: db[typeKey].find(id)
     }
   };
-
 }
 
 export default function() {

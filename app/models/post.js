@@ -7,4 +7,5 @@ export default Model.extend({
   body: attr('string'),
   created: attr('date'),
   updated: attr('date'),
+  image: attr('string'),
 });

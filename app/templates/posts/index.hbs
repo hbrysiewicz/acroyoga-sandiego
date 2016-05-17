@@ -1,0 +1,29 @@
+<div class="w-section section">
+  <div class="w-container">
+    <div class="w-dyn-list">
+      <div class="w-dyn-items w-row">
+        {{#each model as |post|}}
+          <div class="w-dyn-item w-col w-col-4 blog-block">
+            {{#link-to 'posts.show' post class='w-inline-block project-link blog-link'}}
+              <div class="blog-image-wrapper">
+                <div class="blog-date">{{moment-from-now post.created}}</div>
+                <div class="blog-category">Post</div>
+                <div class="blog-image" style="background-image: url({{post.image}})"></div>
+              </div>
+              <div class="blog-title">{{post.title}}</div>
+              <div class="blog-description">{{post.description}}</div>
+              <div>
+                <div class="blog-author">Written by Someone</div>
+                <div class="blog-author"></div>
+              </div>
+            {{/link-to}}
+          </div>
+        {{else}}
+          <div class="w-dyn-empty">
+            <p>Oops! There's nothing here yet... Check back later!</p>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
