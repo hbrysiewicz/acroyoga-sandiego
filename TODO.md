@@ -3,7 +3,7 @@
 - [x] Setup domain to point to pagefront app
 - [x] Pick an event or scheduling solution
 - [x] Mock out posts and events
-- [ ] Style events
+- [x] Style events
 - [ ] Style posts
 - [ ] Individual post
 - [ ] Individual event

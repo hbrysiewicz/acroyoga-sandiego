@@ -5,6 +5,7 @@ export default Model.extend({
   name: attr('string'),
   description: attr('string'),
   url: attr('string'),
+  image: attr('string'),
   start: attr('date'),
   end: attr('date'),
   created: attr('date'),

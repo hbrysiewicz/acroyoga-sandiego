@@ -1,15 +1,14 @@
 function getMany(typeKey, db) {
-  let data = {};
-  data = db[typeKey].map((attrs) => {
-    let rec = {
-      type: typeKey,
-      id: attrs.id,
-      attributes: attrs
-    };
-    return rec;
-  });
-
-  return { data };
+  return {
+    data: db[typeKey].map((attrs) => {
+      let rec = {
+        type: typeKey,
+        id: attrs.id,
+        attributes: attrs
+      };
+      return rec;
+    })
+  };
 }
 
 function get(typeKey, db, req) {
