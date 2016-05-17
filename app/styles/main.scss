@@ -769,6 +769,10 @@ html.w-mod-js *[data-ix="hero-text"] {
   .nav-menu {
     background-color: #242424;
   }
+  .nav-menu-mini .nav-menu .nav-link {
+    color: #ccc;
+  }
+
   .contact-overlay {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
